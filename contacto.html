@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="es">
+<html manifest="/cache.manifest">
+<head>
+<meta  charset="utf-8" />
+<link rel="shortcut icon"  href="images/favicon.ico" />
+<link rel="stylesheet"  href="css/stylecss.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<title>Berana asociación empresarial | Contaco</title>
+<meta name="description" content="La página web de la asociación empresarial Berana social media & marketing, con habilidades en SEO,HTML5,CSS3, marketing online, redes sociales>
+<meta name="author" content="Bernardo Martin Viudez">
+</head>
+
+<body>
+
+<div id="contenedor">
+	<!-- Definimos la cabecera de la pagina web -->
+	<header>
+<img src="images/logo.png" alt="imagen de logo" class="logo" name="logo" />
+  		<form class="search"><a name="top"></a>
+			<input type="submit" value="Buscar" name="search"/>
+			<input type="search" placeholder="Busqueda"  value="" size="30" maxlength="28"/>
+ 		 </form>
+        <hgroup>
+  			<h3>Asociación de empresarios</h3>
+ 		    <h1>Berana</h1>
+		</hgroup>
+         <br/><br/><br/><br/><br/>
+  		<h3 class="frase">Trabajamos para usted y sus necesidades</h3>
+        <a href="#">
+            <img class="redes_cabecera" title="Facebook" alt="icono facebook" height="30" width="30" src="images/icono_fb.png"  />
+        </a>
+        <a href="#">
+        	<img class="redes_cabecera" alt="icono rss" title="RSS" height="30" width="30" src="images/icono_rss_cabecera.png" />
+        </a>
+        <a href="#">
+        	<img class="redes_cabecera" alt="icono Google+" title="Google+" height="30" width="30" src="images/gplus.png" />
+        </a>
+        <a href="#">
+        	<img class="redes_cabecera" alt="icono tweeter" title="Tweeter" height="30" width="30" src="images/icono_tw_cabecera.png" />
+        </a>
+</header>
+	
+  <!-- Definimos menu de navegacion -->
+    <nav>
+<!-- Creamos los elementod del menu con la lista  de ellos -->
+	<ul class="menu">
+		<li><a href="inicio.html">Inicio</a></li>
+        <li><a href="asociacion.html">Asociación</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contrata.html">Contrata</a></li>
+        <li class="activa"><a href="contacto.html">Contacto</a></li>
+	</ul>
+</nav>
+    
+  <!-- Definimos el contenido de la pagina -->
+<div id="contenido">
+    	
+  		<!-- Formado por la parte izquierda -->
+  		<div id="columnaizq">
+	
+    <article>
+    	<hgroup>
+        	<h1>Contacte con nosotros</h1>
+            <h3>Empezemos</h3>
+        </hgroup>
+        <form>
+        <div>
+        <img style="float:left;"src="images/índice.jpg" alt="dibujo contacto" height="151" class="contacto" ><br/>
+        <div>
+        <label  for="contacto">Seleccione un contacto</label>
+        <select autofocus id="contacto" name="contacto" >
+        	<option value="" selected="selected"> - Seleccione uno - </option>
+            <option value="administracion">Administracion</option>
+            <option value="acliente">Atenición al cliente</option>
+            <option value="direccion">Dirección</option>
+        </select>
+        <br/>
+        <label  for="tipoduda">Que tipo de duda tiene</label>
+        <input type="text" list="duda" name="tipoduda" id="tipoduda" required aria-required="true" placeholder="tipo de duda">
+        	<datalist id="duda">
+            	<option value="marketing online">
+                <option value="seo">
+                <option value="servicios">
+                <option value="promociones">
+                <option value="redes sociales">
+                <option value="ofertas">
+                <option value="html5">
+                <option value="quejas">
+                <option value="pedir un presupuesto">
+            </datalist>
+            </div>
+        </div>
+        	<fieldset>
+            	<legend>Formulario de contacto</legend>
+                <div>
+                	<label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" size="20" maxlength="18" required aria-required="true">
+                </div>
+                <div>
+                	<label for="apellido1">Apellido 1º</label>
+                    <input type="text" id="apellido1" name="apellido1" size="20" maxlength="18">
+                    <label style="padding-left:5em;"for="apellido2">Apellido 2º</label>
+                    <input type="text" id="apellido2" name="apellido2" size="20" maxlength="18">
+                </div>
+                <div>
+                	<label for="Poblacion">Población</label>
+                    <input type="text" id="poblacion" name="poblacion" size="25" maxlength="24">
+                    <label style="padding-left:5em;" for="cp">Código Postal</label>
+                    <input type="text" id="cp" name="cp" size="7" maxlength="5" placeholder="XXXXX" pattern="\S{5,}" >
+                </div>
+                <div>   
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" name="provincia">
+                    	<option value=""selected="selected"> - Seleccione uno - </option>
+                        <option value="valenciana">Comunidad Valenciana</option>
+                        <option value="andaluza">Comunidad de Andalucia</option>
+                        <option value="lamancha">Castilla la Mancha</option>
+                        <option value="leon">Cstilla Leon</option>
+                        <option value="baleares">Islas Baleares</option>
+                        <option value="canarias">Islas Canarias</option>
+                        <option value="catalunya">Cataluña</option>
+                        <option value="vasco">Pais vasco</option>
+                        <option value="extremadura">Extremadura</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="galicia">Galicia</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="rioja">La rioja</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="aragon">Aragon</option>
+                        <option value="ceuta">Ceuta</option>
+                        <option value="melilla">Melilla</option>
+                    </select> 
+ 					               
+                </div>
+                <div>
+                	<label for="fecha_dia">Fecha de nacimiento</label>
+                    <input type ="number" size="3" maxlength="2" id="fecha_dia" name="fecha_dia" pattern="\S{2,}" min="0" max="31"/> de
+                    <select id="fecha_mes" name="fecha_mes">
+                    	<option value="" selected="selected"> - Seleccione uno - </option>
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    de
+                    <input type="text" size="5" maxlength="4" id="fecha_ano" name="fecha_ano" placeholder="XXXX" pattern="\S{4,}" />
+                </div>
+                <div>
+                    <label for="sexo">Sexo</label>
+                    <input type="radio" name="sexo" value="hombre"/>Hombre
+                    <input type="radio" name="sexo" value="mujer"/>Mujer
+                </div>    
+                <div>
+                	<label for="email">E-mail</label>
+                    <input  type="email" id="email" name="email" size="50" maxlength="48" required aria-required="true" placeholder="sucorreo@servidor.com">
+                    <label style="padding-left:3em;" for="phone">Teléfono contacto</label>
+                    <input type="tel" id="phone" name="phone" size="14" maxlength="13">
+                </div>
+                <div style="padding-left:4%;">
+                <label  style="padding-left:13%;"for="comentario">Comentario que desea comunicarnos</label><br/>
+                <textarea id="comentario" name="comentario" cols="70" rows="10" placeholder="<-- Escriba aquí su comentario -->"></textarea><br/>
+                <input style="float:right;" type="button" name="enviar" value="Enviar"/>
+                </div>
+                
+            </fieldset>
+            
+        </form>
+        <hgroup class="formulario">
+        	<h2>¿Todavía no está registrado?</h2>
+            <h4>Solo serán 2 minutos</h4>
+        </hgroup>
+        <fieldset >
+        	<legend>Proceso de registro</legend>
+        <form>
+                	<div>
+                    <label class="nombre" for="nombre_ususario">Nombre de Usuario</label>
+                    <input type="text" id="nombre_ususario" name="nombre_usuario" value="" size="20" maxlength="19" required aria-required="true"/>
+                    <label for="contrasenya" style="padding-left:8em;"> Contraseña</label>
+                    <input type="password" id="contrasenya" name="contrasenya" value="" size="20" maxlength="10" placeholder="su contraseña" required aria-required="true"/><br/>
+                    </div>
+                    <div>
+                	<label for="Poblacion">Población</label>
+                    <input type="text" id="poblacion" name="poblacion" size="25" maxlength="24">
+                    <label for="cp">Código Postal</label>
+                    <input type="text"  id="cp" name="cp" size="7" maxlength="5" placeholder="XXXXX" pattern="\S{5,}">
+                 
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" name="provincia">
+                    	<option value="" selected="selected"> - Seleccione uno - </option>
+                        <option value="valenciana">Comunidad Valenciana</option>
+                        <option value="andaluza">Comunidad de Andalucia</option>
+                        <option value="lamancha">Castilla la Mancha</option>
+                        <option value="leon">Cstilla Leon</option>
+                        <option value="baleares">Islas Baleares</option>
+                        <option value="canarias">Islas Canarias</option>
+                        <option value="catalunya">Cataluña</option>
+                        <option value="vasco">Pais vasco</option>
+                        <option value="extremadura">Extremadura</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="galicia">Galicia</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="rioja">La rioja</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="aragon">Aragon</option>
+                        <option value="ceuta">Ceuta</option>
+                        <option value="melilla">Melilla</option>
+                    </select> 
+ 					               
+                </div>
+                <div>
+                	<label for="fecha_dia">Fecha de nacimiento</label>
+                    <input type ="number" min="0" maz="31" size="3" maxlength="2" id="fecha_dia" name="fecha_dia"  pattern="\S{2,}"/> de
+                    <select id="fecha_mes" name="fecha_mes">
+                    	<option value="" >- Seleccione uno -</option>
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    de
+                    <input type="text"  size="5" maxlength="4" id="fecha_ano" name="fecha_ano" placeholder="XXXX" pattern="\S{4,}"/>
+                    <label style="display:block"for="sexo" >Sexo</label>
+                    <input style="padding-left:4em;" type="radio" name="sexo" value="hombre"/>Hombre
+                    <input type="radio" name="sexo" value="mujer"/>Mujer
+                </div>    
+                <div>
+                	<label style="display:inline;"for="email">E-mail</label>
+                    <input type="email" id="email" name="email" size="50" maxlength="48" required aria-required="true" placeholder="sucorreo@servidor.com" >
+                </div>
+                <input style="float:right;" type="button" value="Registrarse" name="registro">
+        </form>
+        
+                
+        </fieldset>
+        	
+    </article>
+    <br/><br/>
+
+	</div>
+        
+  		<!-- Formado por la parte derecha -->
+  		<div id="columnader">
+        <!-- Primer cuadro con caracteristicas para esta columna, REGISTRARSE -->
+            <aside id="login">
+            	<div id="cabecera">
+                	<span> Login </span>
+                </div>
+                <div id="cuerpo">
+                <br/>
+                <form >
+                	<label class="nombre" for="nombre_ususario"> Usuario</label><br/>
+                    <input type="text" id="nombre_ususario" name="nombre_usuario" value="" size="20" maxlength="14" /><br/>
+                    <label for="contrasenya"> Contraseña</label><br />
+                    <input type="password" id="contrasenya" name="contrasenya" value="" size="20" maxlength="10" />
+                    <br />
+                    <label for="recordar">Recordar</label>
+                    <input type="checkbox" value=""  name="recordar" />
+                </form>
+                <br/>
+                
+                </div>
+                <a href="#" class="olvido">Olvidé mi contraseña</a>
+                <a href="#" class="registrarse">Registrarse</a>
+            </aside>
+  			<!-- Segundo cuadro que será para quien quiea contratar PROPAGANDA -->
+            <aside id="propaganda">
+            	<p><a href="#">
+            	  <img src="images/tiosam.gif" alt="propaganda" />
+           	    </a>
+            	  <span>Contrate aquí su propaganda</span>            </p>
+            </aside>
+    		<!-- Tercer cuadro que será una nube de TAGS -->
+            <aside id="nube_tags">
+            	<div id="cabecera_nube">
+                	<span> Nubes de tags </span>
+                </div>
+                <div id="cuerpo_nube">
+                	  <a class="link-1" style="font-size: 8pt;" title="3 artículos" href="#">								Redes sociales</a>
+                	  <a class="link-2" style="font-size: 12pt;" title="5 artículos" href="#">	Social media</a>
+                	  <a class="link-3" style="font-size: 14pt;" title="2 artículos" href="#">Marketing online</a>
+                	  <a class="link-4" style="font-size: 9pt;" title="6 artículos" href="#">SEO posicionamiento</a>
+                	  <a class="link-5" style="font-size: 11pt;" title="3 artículos" href="#">Joomla!</a>
+                	  <a class="link-6" style="font-size: 6pt;" title="2 artículos" href="#">Wordpress</a>
+                	  <a class="link-7" style="font-size: 13pt;" title="4 artículos" href="#">Linkbuilding</a>               
+                      <a class="link-8" style="font-size: 10pt;" title="2 artículos" href="#">Blogs asociados</a>
+                      <a class="link-9" style="font-size: 9pt;" title="2 artículos" href="#">Noticias</a>
+                      <a class="link-10" style="font-size: 12pt;" title="1 artículo" href="#">Snippets</a>
+                      <a class="link-11" style="font-size: 10pt;" title="1 artículo" href="#">Reputacion Online</a>
+                      <a class="link-12" style="font-size: 13pt;" title="2 artículos" href="#">Berana</a>
+                      <a class="link-13" style="font-size: 15pt;" title="2 artículos" href="#">Experiencia de empresas asociadas</a>
+                      <a class="link-14" style="font-size: 9pt;" title="1 artículo" href="#">Actividades relacionadas</a>
+                      <a class="link-15" style="font-size: 11pt;" title="2 artículos" href="#">Presentaciones</a>
+                      <a class="link-16" style="font-size: 9pt;" title="1 artículo" href="#">conferencias</a>
+                      <a class="link-17" style="font-size: 12pt;" title="2 artículos" href="#">Cursos marketing</a>
+                      <a class="link-18" style="font-size: 15pt;" title="1 artículo" href="#">Berana social media & marketing</a>
+                      <a class="link-19" style="font-size: 8pt;" title="3 artículos" href="#">Busquedas en Google</a>
+                 </div>
+                	
+            </aside>
+            
+        </div>
+</div> 
+	<!-- Iconos para nevegas dentro de la página Top y Home -->
+	<a class="inicio" href="inicio.html" >
+		<img src="images/home.png" alt="Home" width="31" height="30" title="Inicio" />
+	</a>
+	<a href="#top" class="top">
+		<img src="images/top.png" alt="arriba de la pagina" width="31" height="30" title="Top" />
+	</a>
+
+    <!-- Definimos el pie da la pagina web -->
+    <footer>
+    	<!-- Primera columna con enlaces -->
+    	<section class="columna">
+    	<ul>
+        	<li class="underline">Asociados Berana</li>
+            <li><a href="#">SEO gen</a></li>
+            <li><a href="#">think HTML</a></li>
+            <li><a href="#">estilo CSS3</a></li>
+            <li><a href="#">coaching web</a></li>
+  	</ul>
+    	</section>
+        <!-- Segunda columna con enlaces -->
+        <section class="columna">
+        <ul>
+        	<li class="underline">Sitemap</li>
+            <li><a href="#">Mapa del sitio</a></li>
+            
+  	</ul>
+    	</section>
+    	        
+        <!-- Tercera columna con enlaces -->
+        <section class="columna">
+        <ul>
+        	<li class="underline">Servicios</li>
+            <li><a href="#">Posicionamiento SEO</a></li>
+            <li><a href="#">Marketing online</a></li>
+            <li><a href="#">Social media</a></li>
+            <li><a href="#">Creación de webs</a></li>
+            <li><a href="#">Tiendas Online</a></li>
+  		</ul>
+        </section>
+        <!-- Cuarta columna de enlaces -->
+        <section class="columna">
+        <ul>
+        	<li class="underline">Ayuda</li>
+            <li><a href="#">
+            		<img src="images/interrogacion.png" height="65px" width="65px" alt="ayuda" title="ayuda"/>
+                </a>
+            </li>
+           
+  		</ul>
+    	</section>
+    	<!-- Copyright del pie -->
+        <section>
+        <p class="copyright">&copy;Copyright by Berana social media & marketing</p>
+        
+        </section>
+    </footer>
+</div>    
+</body>
+</html>

@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+/* Primero definimos las caracteristicas del conjunto que herederan los demas */
+article,aside,figure,header,hgroup,nav,section{
+	display:block;
+}
+/*Aplicamos sombras a todos los h1 y he de la pagina*/
+h1,h3{
+	text-shadow:1px 1px 1px #FFFFFF;
+}
+body{
+	padding:o;
+	border:0;
+	background-color:#D5D5D5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:95%
+}
+/* Características para la cabecera de la pagina 	*/
+header{
+	background-color:#E1DBDF;
+	padding:1.2em .7em 1.2em 1em;
+	margin:auto;
+	width:97%;
+	border:2px solid #999;	
+}
+
+header .frase{
+	padding-left:7.5em;
+	margin-bottom:0.5em;	
+	/* Estilo de letra nuevo */
+	font-family: 'Tangerine', serif;
+    font-size: 52px;
+	/* Inclinación de nuestra frase */
+	-webkit-transform:skew(2deg,-3deg);
+	-moz-transform:skew(2deg,-3deg);
+	-ms-transform:skew(2deg,-3deg);
+	-o-transform:skew(2deg,-3deg);
+	transform: skew(2deg,-3deg);	
+}
+header h1:hover {
+		/* Aplicamos la rotacion a esta frase en h3*/
+		-webkit-transform:rotate(-15deg);
+		-moz-transform:rotate(-15deg);
+		-ms-transform:rotate(-15deg);
+		-o-transform:rotate(-15deg);
+		transform: rotate(-15deg);
+	}
+
+header h3{
+	padding:0;
+	margin:0;
+}
+header h1{
+	font-size:38px;
+	padding-left:4.5em;
+	margin:0;
+	color:#2F9DCC;
+	/* Añadimos sombra a nuestro título */
+	text-shadow:3px 3px 1px rgba(0,0,0,0.5);
+}
+header form{
+	float:right;
+}
+header .logo{
+	float:left;
+	position:relative;
+	top:1.2em;
+	left:5em;
+}
+header .redes_cabecera{
+	position:relative;
+	bottom:2em;
+	display:block;
+	float:right;
+	margin:.6em;
+}
+
+/* Características para la parte del navegador de la página */
+nav{
+	
+	margin-top:1em;
+	width:100%;
+}
+ul.menu{
+	float:left;
+	clear:both;
+	width:100%;
+	list-style-type:none;
+	margin:0;
+	padding-left:1em;
+	
+}
+ul.menu li{
+	float:left;
+	margin-right:.8em;
+	font-size:18px;
+	font-weight:bold;
+	line-height:1em;
+	background-color:#E1DBDF;
+	border-width:2px 2px 0px;
+	border-style: solid ;
+	border-color:#999;
+	/* Redondeamos las esquinas de arriba */
+	border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+		
+}
+
+	
+ul.menu li a:link, ul.menu li a:visited{
+	padding:.3em;
+	display:block;
+	text-decoration:none;
+	color:#999;
+	border-bottom:none;	
+}
+ul.menu li a:hover{
+	color:#2F9DCC;
+}
+ul.menu li.activa a{
+	background:#2F9DCC;
+	color:#000;
+}
+/* Características para el contenido principal de la pagina, formado por dos laterales */
+#contenido{
+	clear:both;
+	background-color:#E1DBDF;
+	border:2px solid #999;
+	width:100%;
+	float:left;
+	margin-bottom:0em;
+	
+}
+/* Definimos el estilo de la columna izquierda */
+#contenido #columnaizq{
+	width:70%;
+	float:left;
+	background-color:#E1DBDF;
+	border-right:2px solid #999;
+	text-align:justify;
+	padding:0px 2px 0px 5px;
+}
+
+#contenido #columnaizq #figura1{
+	float:left;
+	margin:0;
+	padding-right:.3em;
+}
+#contenido #columnaizq #figura2{
+	float:right; 
+	margin-bottom:10px;
+	margin:0;
+	padding-left:.3em;
+}
+#contenido #columnaizq #figura3{
+	float:left;
+}
+#contenido #columnaizq p.primero:first-letter{
+	font-size:2em;
+	margin:0;
+	padding:0;	
+	
+}
+
+#contenido #columnaizq h1{
+	text-align:center;
+}
+#contenido #columnaizq table.normal{border: #069 1px thin ;
+			border-collapse:collapse;
+			text-align:center;
+			margin-left:10%;
+			margin-top:2em;}
+#contenido #columnaizq table.normal th,.normal td{border:solid 1px #069 ;text-align:;}
+#contenido #columnaizq table.normal th.arriba{color: #C99;}
+#contenido #columnaizq table.normal th.izquierda{color:#093;}
+
+#contenido #columnaizq video{
+	float:left;
+	display:inline;
+	margin-bottom:2em;
+}
+
+/* Definimos el estilo para la columna derecha */
+#contenido #columnader{
+	width:29%;
+	float:left;
+	background-color:#E1DBDF;
+}
+
+	/* Primer cuadro de la columna derecha, REGISTRARSE */
+	#contenido #columnader #login{
+		margin:10%;
+		border:1px solid #999;
+		width:80%;
+		padding-bottom:.2em;
+		/* Aplicamos bordes redondeados */
+		-moz-border-radius-topleft:10px;
+		border-top-left-radius:10px;
+		-moz-border-radius-topright:10px;
+		border-top-right-radius:10px;	
+		/* Aplicamos sombras */
+		-webkit-box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		-moz-box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		
+	}
+	#contenido #columnader #login #cabecera{
+		border-bottom:1px solid #999;
+		text-align:center;
+		background-color:#2F9DCC;
+		line-height:1.6em;
+		font-weight:bold;
+		width:100%
+		/* Aplicamos bordes redondeados */
+		-moz-border-radius-topleft:10px;
+		border-top-left-radius:10px;
+		-moz-border-radius-topright:10px;
+		border-top-right-radius:10px;	
+		/*Sombra para el texto */
+		text-shadow:1px 1px 1px #FFFFFF;
+		/* Degradado del fondo del cabezar */
+		background-image:  -moz-linear-gradient(top, #2F9DCC 0%, #E1DBDF 98%);
+		background-image:  -webkit-linear-gradient(top, #2F9DCC 0%, #E1DBDF 98%);
+		background-image:  -o-linear-gradient(top, #2F9DCC 0%, #E1DBDF 98%);
+	}
+	#contenido #columnader #login #cuerpo{
+		padding-left:1em;
+	}
+	#contenido #columnader #login .nombre{
+		margin-bottom;1em;
+	}
+	#contenido #columnader #login .contrasenya{
+		margin:1em;
+	}
+	#contenido #columnader form input{
+		margin-left:2em;
+	}
+	#contenido #columnader #login .olvido{
+		padding:0;
+		font-size:10px;
+	}
+	#contenido #columnader #login .registrarse{
+		float:right;
+		font-size:10px;	
+	}
+	#contenido #columnader #login a:hover{
+		color:red;
+	}
+	
+	/* Segundo cuadro de la columna derecha, PROPAGANDA */
+	#contenido #columnader #propaganda{
+		border:1px solid #999;
+		width:80%;
+		margin:10%;	
+		/* Aplicamos sombras */
+		-webkit-box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		-moz-box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		/* Degradadoas */
+		background-image:  -moz-linear-gradient(0% 0 270deg, rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 83%, rgba(0, 0, 0, 0.06) 92%, rgba(0, 0, 0, 0) 98%);
+		background-image:  -webkit-linear-gradient(0% 0 270deg, rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 83%, rgba(0, 0, 0, 0.06) 92%, rgba(0, 0, 0, 0) 98%);
+		background-image:  -o-linear-gradient(0% 0 270deg, rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 83%, rgba(0, 0, 0, 0.06) 92%, rgba(0, 0, 0, 0) 98%);
+		
+	}
+	#contenido #columnader #propaganda img{
+		padding-left:8%;	
+	}
+	#contenido #columnader #propaganda span{
+		text-align:center;
+		font-variant:small-caps;
+		font-size:10px;
+		padding-left:3em;	
+	}
+	/*Aplicamos CSS3 con el escalado de una imagen */
+	#contenido #columnader #propaganda img:hover {
+		-webkit-transform:scale(2.0);
+		-moz-transform:scale(2.0);
+		-ms-transform:scale(3.0);
+		-o-transform:scale(2.0);
+		transform: scale(2.0);
+	}
+	
+	/* Tercer cuadro de la columna derecha, NUBE_TAGS */
+	#contenido #columnader #nube_tags{
+		margin:10%;
+		border:1px solid #999;
+		width:80%;
+		padding-bottom:.2em;
+		height:290px;
+		/* Aplicamos sombras */
+		-webkit-box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		-moz-box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		box-shadow:2px 5px 0 0 rgba(72,72,72,1);
+		/* Aplicamos bordes redondeados */
+		-moz-border-radius-topleft:10px;
+		border-top-left-radius:10px;
+		-moz-border-radius-topright:10px;
+		border-top-right-radius:10px;	
+		
+	}
+	#contenido #columnader #nube_tags #cabecera_nube{
+		border-bottom:1px solid #999;
+		text-align:center;
+		background:#2F9DCC;
+		line-height:1.6em;
+		font-weight:bold;
+		width:100%;
+		/* Aplicamos bordes redondeados */
+		-moz-border-radius-topleft:10px;
+		border-top-left-radius:10px;
+		-moz-border-radius-topright:10px;
+		border-top-right-radius:10px;	
+		/*Sombra para el texto */
+		text-shadow:1px 1px 1px #FFFFFF;
+		/* Degradado del fondo del cabezar */
+		background-image:  -moz-linear-gradient(top, #2F9DCC 0%, #E1DBDF 98%);
+		background-image:  -webkit-linear-gradient(top, #2F9DCC 0%, #E1DBDF 98%);
+		background-image:  -o-linear-gradient(top, #2F9DCC 0%, #E1DBDF 98%);
+	}
+	#contenido #columnader #nube_tags #cuerpo_nube{
+		padding-left:.7em;
+		
+	}
+	
+/* Parte inferior de la ventana del contenedor */
+	a.inicio{
+		clear:both;
+		float:left;
+		display:inline;
+	}
+	a.top{
+		float:right;
+		display:inline;
+	}
+	
+	
+/* Parte del pie */
+footer{
+	padding-top:2em;
+	clear:both;	
+	color:#2F9DCC;
+	
+}
+	footer section.columna{
+		float:left;
+		display:inline;
+		margin:0em 5% 1em;
+		text-align:center;
+		
+	}
+	footer ul{
+		list-style-type:none;
+		font-size:10px;	
+	}
+	
+	footer li a{
+		text-decoration:none;
+		text-align:center;	
+		color:#999;
+	
+		
+	}
+	footer p.copyright{
+		clear:both;
+		text-align:center;
+		font-size:12px;
+	}
+	footer li.underline{
+		text-decoration:underline;
+		font-size:14px;
+			/*Sombra para el texto */
+		text-shadow:1px 1px 1px #FFFFFF;
+	}
+	
+/* Redondeamos las cuatro esquinas de los botones de formularios */
+input[type=button],input[type=submit]{
+	-moz-border-radius:5px;
+	border-radius:5px;
+	/* Aplicamos un poco de sombra*/
+	box-shadow:2px 2px 1px rgba(0,0,0,0.5);
+}
+/* REdondeamos los bordes de la imagen inicial de la pagina contacto */
+img.contacto{
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+/*  Estilo para formularios  */
+
+
+	
+form div{
+	margin: 0.4em 0;
+}
+
+	
+	
+	
