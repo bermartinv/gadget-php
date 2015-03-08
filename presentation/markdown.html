@@ -22,11 +22,13 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			if( window.location.search.match( /print-pdf/gi ) ) {
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = '../public/vendor/reveal.js/css/print/pdf.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
 		</script>
 
 		<!--[if lt IE 9]>
@@ -38,20 +40,55 @@
 
 		<div class="reveal">
         	<div class="slides">
-            <section data-markdown>
-				<script type="text/template">
-        ## Page title
-
-        A paragraph with some text and a [link](http://hakim.se).
-    </script>            
+        	<section>
+            	<p>Para empezar a usar Reveal y sus diapositivas, empezaremos por aqui:</p>
+                	<pre>&lt;div class="revela"&gt;
+                    		&lt;div class="slide"&gt;
+                            	&lt;section&gt;&lt;/section&gt;
+                         &lt;/div class="revela"&gt;
+                    		&lt;/div class="slide"&gt;   
+                            </pre>
+                <p>Todo lo contenido dentro de las etiquetas section son las distintas diapostivas que vayamos creando</p>
             </section>
-        	<section data-markdown="../presentation/md/primero.md">
-				
-                           
+			<section data-markdown="md/segundo.md">
+            </section>
+            <section data-markdown="">
+            <script type="text/template">
+            # significa H1
+            </script>
+            </section>
+			<section id="fragments">
+            <h2>Hello There</h2>
+					<p class="fragment">
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</p>
+                    <p class="fragment"> Hola que tal </p>
+            </section>
+            <section>
+            	<section>
+                <p>Esto me parece que sale hacia abajo</p>
+                </section>
+                <p>1</p>
+                <section>
+                <p>2</p>
+                </section>
+                <section>
+                <p>3</p>
+                </section>
+            </section>
+            <section >
+            <p class="fragment fade-out">grow</p>
+            <p class="fragment current-visible">bermartinv</p>
+            <p class="fragment highlight-red">bermartinv</p>
+            <p class="fragment highlight-blue">Hola</p>
+            <p class="fragment roll-in">Hugo</p>
+            <p class="fragment shrink">bermartinv</p>
+            <p class="fragment grow">bermartinv</p>
             </section>
             </div>
         </div>
-        <script src="../public/vendor/reveal.js/lib/js/head.min.js"></script>
+		
+      <script src="../public/vendor/reveal.js/lib/js/head.min.js"></script>
 <script src="../public/vendor/reveal.js/js/reveal.js"></script>
 <script>
 // Full list of configuration options available here:
@@ -78,5 +115,6 @@ dependencies: [
 });
 </script>
 
+
     </body>
-</html>    
+    </html>
