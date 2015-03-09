@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"  href="../css/stylecss.css" >
+<meta name="description" content="Bootstrap">
+<meta name="keywords" content="HTML5,CSS3,JavaScript,Bootstrap">
+<meta name="author" content="Bernardo Martin">
+<meta name="robots" content="index,follow"  >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="shortcut icon"  href="../images/favicon.ico" />
+<link rel="stylesheet" href="public/vendor/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"/> 
+<script src="public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="public/vendor/jquery/dist/jquery.min.css"></script>
+<title>Berana bootstrap</title>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head> 
+<body>
+
+<div id="contenedor">
+	<!-- Definimos la cabecera de la pagina web -->
+	<header>
+<img src="../images/logo.png" alt="imagen de logo" class="logo" name="logo" />
+  		<form class="search" id="search" method="get"><a name="top"></a>
+			<input type="submit" value="Buscar" name="search"/>
+			<input type="search" placeholder="Busqueda"  value="" size="30" maxlength="28"/>
+ 		 </form>
+        <hgroup>
+  			<h3>Asociación de empresarios</h3>
+ 		    <h1>Berana</h1>
+		</hgroup>
+         <p><br/>
+           <br/><br/>
+         </p>
+        <h3 class="frase">
+        	<span>Trabajamos para usted y sus necesidades</span>
+         </h3>
+        
+        <a href="https://es-es.facebook.com/" target="_blank" name="Facebook">
+            <img class="redes_cabecera" title="Facebook" alt="icono facebook" height="30" width="30" src="../images/icono_fb.png"  />
+        </a>
+        <a href="../noticias.html" target="_blank" name="RSS">
+        	<img class="redes_cabecera" alt="icono rss" title="RSS" height="30" width="30" src="../images/icono_rss_cabecera.png" />
+        </a>
+        <a href="https://www.google.es/" target="_blank" name="Google +">
+        	<img class="redes_cabecera" alt="icono Google+" title="Google+" height="30" width="30" src="../images/gplus.png" />
+        </a>
+        <a href="https://twitter.com/" target="_blank" name="Tweeter">
+        	<img class="redes_cabecera" alt="icono tweeter" title="Tweeter" height="30" width="30" src="../images/icono_tw_cabecera.png" />
+        </a>
+</header>
+	
+  <!-- Definimos menu de navegacion -->
+    <nav>
+<!-- Creamos los elementod del menu con la lista  de ellos -->
+	<ul class="menu">
+		<li class="activa"><a href="inicio.html">Inicio</a></li>
+        <li><a href="asociacion.html">Asociación</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contrata.html">Contrata</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+	</ul>
+</nav>
+    
+  <!-- Definimos el contenido de la pagina -->
+<div id="contenido">
+    	
+  		<!-- Formado por la parte izquierda -->
+  		<div id="columnaizq">
+        <div class="container">
+        	<p>&lt;div class="container"&gt;&lt;/div&gt; </p>
+        	<h1>My first Bootstrap</h1>
+        </div>
+        	<h1>Sin Bootstrap</h1>
+		<div class="container-fluid"><p>&lt;div class="container-fluid"&gt;&lt;/div&gt;</p>
+        	<h1>Whit Bootstrap</h1>
+        </div>
+        	<h1>Without Bootstrap</h1>
+	</div>
+        
+  		<!-- Formado por la parte derecha -->
+  		<div id="columnader"><!-- Primer cuadro con caracteristicas para esta columna, REGISTRARSE -->
+            <aside id="login">
+            	<div id="cabecera">
+                	<span> Login </span>
+                </div>
+                <div id="cuerpo">
+                <br/>
+                <form >
+                	<label class="nombre" for="nombre_ususario"> Usuario</label><br/>
+                    <input type="text" id="nombre_ususario" name="nombre_usuario" value="" size="20" maxlenght="14" /><br/>
+                    <label for="contrasenya"> Contraseña</label><br />
+                    <input type="password" id="contrasenya" name="contrasenya" value="" size="20" maxlenght="10" />
+                    <br />
+                    <label for="recordar">Recordar</label>
+                    <input type="checkbox" value=""  name="recordar" />
+                </form>
+                <br/>
+                
+                </div>
+                <a href="#" class="olvido">Olvidé mi contraseña</a>
+                <a href="../contacto.html" class="registrarse">Registrarse</a>
+            </aside>
+  			<!-- Segundo cuadro que será para quien quiea contratar PROPAGANDA -->
+            <aside id="propaganda">
+            	<p><a href="#" >
+            	  <img src="../images/tiosam.gif" alt="propaganda" />
+           	    </a>
+            	  <span>Contrate aquí su propaganda</span>            </p>
+            </aside>
+    		<!-- Tercer cuadro que será una nube de TAGS -->
+            <aside id="nube_tags">
+            	<div id="cabecera_nube">
+                	<span> Nubes de tags </span>
+                </div>
+                <div id="cuerpo_nube">
+                	  <a class="link-1" style="font-size: 8pt;" title="3 artículos" href="#">								Redes sociales</a>
+                	  <a class="link-2" style="font-size: 12pt;" title="5 artículos" href="#">	Social media</a>
+                	  <a class="link-3" style="font-size: 14pt;" title="2 artículos" href="#">Marketing online</a>
+                	  <a class="link-4" style="font-size: 9pt;" title="6 artículos" href="#">SEO posicionamiento</a>
+                	  <a class="link-5" style="font-size: 11pt;" title="3 artículos" href="#">Joomla!</a>
+                	  <a class="link-6" style="font-size: 6pt;" title="2 artículos" href="#">Wordpress</a>
+                	  <a class="link-7" style="font-size: 13pt;" title="4 artículos" href="#">Linkbuilding</a>               
+                      <a class="link-8" style="font-size: 10pt;" title="2 artículos" href="#">Blogs asociados</a>
+                      <a class="link-9" style="font-size: 9pt;" title="2 artículos" href="#">Noticias</a>
+                      <a class="link-10" style="font-size: 12pt;" title="1 artículo" href="#">Snippets</a>
+                      <a class="link-11" style="font-size: 10pt;" title="1 artículo" href="#">Reputacion Online</a>
+                      <a class="link-12" style="font-size: 13pt;" title="2 artículos" href="#">Berana</a>
+                      <a class="link-13" style="font-size: 15pt;" title="2 artículos" href="#">Experiencia de empresas asociadas</a>
+                      <a class="link-14" style="font-size: 9pt;" title="1 artículo" href="#">Actividades relacionadas</a>
+                      <a class="link-15" style="font-size: 11pt;" title="2 artículos" href="#">Presentaciones</a>
+                      <a class="link-16" style="font-size: 9pt;" title="1 artículo" href="#">conferencias</a>
+                      <a class="link-17" style="font-size: 12pt;" title="2 artículos" href="#">Cursos marketing</a>
+                      <a class="link-18" style="font-size: 15pt;" title="1 artículo" href="#">Berana social media & marketing</a>
+                      <a class="link-19" style="font-size: 8pt;" title="3 artículos" href="#">Busquedas en Google</a>
+                 </div>
+                	
+            </aside>
+            
+        </div>
+</div> 
+	<!-- Iconos para nevegas dentro de la página Top y Home -->
+	<a class="inicio" href="inicio.html" >
+		<img src="../images/home.png" alt="Home" width="31" height="30" title="Inicio" />
+	</a>
+	<a href="#top" class="top">
+		<img src="../images/top.png" alt="arriba de la pagina" width="31" height="30" title="Top" />
+	</a>
+
+    <!-- Definimos el pie da la pagina web -->
+    <footer>
+    	<!-- Primera columna con enlaces -->
+    	<section class="columna">
+    	<ul>
+        	<li class="underline">Asociados Berana</li>
+            <li><a href="#">SEO gen</a></li>
+            <li><a href="#">think HTML</a></li>
+            <li><a href="#">estilo CSS3</a></li>
+            <li><a href="#">coaching web</a></li>
+  	</ul>
+    	</section>
+        <!-- Segunda columna con enlaces -->
+        <section class="columna">
+        <ul>
+        	<li class="underline">Sitemap</li>
+            <li><a href="#">Mapa del sitio</a></li>
+            
+  	</ul>
+    	</section>
+    	        
+        <!-- Tercera columna con enlaces -->
+        <section class="columna">
+        <ul>
+        	<li class="underline">Servicios</li>
+            <li><a href="#">Posicionamiento SEO</a></li>
+            <li><a href="#">Marketing online</a></li>
+            <li><a href="#">Social media</a></li>
+            <li><a href="#">Creación de webs</a></li>
+            <li><a href="#">Tiendas Online</a></li>
+  		</ul>
+        </section>
+        <!-- Cuarta columna de enlaces -->
+        <section class="columna">
+        <ul>
+        	<li class="underline">Ayuda</li>
+            <li><a href="../contacto.html">
+            		<img src="../images/interrogacion.png" height="65px" width="65px" alt="ayuda" title="ayuda"/>
+                </a>
+            </li>
+           
+  		</ul>
+    	</section>
+    	<!-- Copyright del pie -->
+        <section>
+        <p class="copyright">&copy;Copyright by Berana social media & marketing</p>
+        
+        </section>
+    </footer>
+</div>    
+</body>
+</html>
+
